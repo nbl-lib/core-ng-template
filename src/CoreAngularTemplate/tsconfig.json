@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "outDir": "wwwroot/tsjs/",
+    "removeComments": false,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5",
+    "lib": [ "es2015", "dom" ],
+    "moduleResolution": "node",
+    "types": [
+
+      "jasmine"
+    ],
+    "typeRoots": [ "node_modules/@types" ]
+  },
+  "exclude": [
+    "node_modules/**",
+    "wwwroot/**",
+    "typings/index",
+    "typings/index.d.ts"
+  ]
+}
+

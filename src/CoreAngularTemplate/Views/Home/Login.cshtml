@@ -1,0 +1,107 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div align="center" >
+    <md-card class="top-card">{{message}}</md-card>
+    
+
+    <md-card class="main-card">
+        <md-card-header>
+            
+            <md-card-title class="header-image">  </md-card-title>
+            <md-card-subtitle class="result-box">{{stringForNumber}}</md-card-subtitle>
+        </md-card-header>
+        
+        <md-card-content>
+            <form #theCalculatorForm="ngForm">
+                <button #seven md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('7')">
+                    7
+                </button>
+                <button #eight md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('8')">
+                    8
+                </button>
+                <button #nine md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('9')">
+                    9
+                </button>
+                    <button #plus md-mini-fab (click)="calcAction('÷')"><md-icon>÷</md-icon>
+                    </button>
+                <br /><br />
+
+                <button #four md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('4')">
+                    4
+                </button>
+                <button #five md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('5')">
+                    5
+                </button>
+                <button #six md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('6')">
+                    6
+                </button>
+                    <button #plus md-mini-fab (click)="calcAction('x')"><md-icon>clear</md-icon>
+                    </button>
+                <br /><br />
+
+                <button #one md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('1')">
+                    1
+                </button>
+                <button #two md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('2')">
+                    2
+                </button>
+                <button #three md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('3')">
+                    3
+                </button>
+                    <button #minus md-mini-fab (click)="calcAction('-')"><md-icon>remove</md-icon>
+                    </button>
+                <br /><br />
+
+
+                <button #zero md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('0')">
+                    0
+                </button>
+
+                <button #dot md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="queueNumber('.')">
+                    .
+                </button>
+
+                <button #equal md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                        (click)="calcAction('=')">
+                    =
+                </button>
+                <button #plus md-mini-fab (click)="calcAction('+')"><md-icon>add</md-icon></button>
+                <br />
+                <p align="center">
+                    
+                    <button #clearscreen md-raised-button type="button" class="md-raised md-primary btn btn-default"
+                            (click)="clearScreen()">
+                        CLEAR
+                    </button>
+                </p>
+            </form>
+        </md-card-content>
+        <md-card-actions>
+            
+            
+        </md-card-actions>
+    </md-card>
+</div>
